@@ -1,0 +1,60 @@
+@{
+    Layout = "_Layout";
+    ViewData["Title"] = "Contato";
+}
+
+@section Styles {
+    <link rel="stylesheet" href="~/css/loginstl.css" />
+    <link rel="stylesheet" href="~/css/contatostl.css" /> 
+}
+
+<div class="pg">
+    <main>
+        <div class="container1" id="contato">
+
+            <!-- FORMULÁRIO -->
+            <div class="formulario">
+                <h2>Entre em Contato Conosco</h2>
+                <p>Envie sua dúvida, sugestão ou proposta através do formulário abaixo.</p>
+
+                <form asp-controller="Contato" asp-action="EnviarMensagem" method="post">
+
+                    <input type="text" id="Nome" name="Nome" placeholder="Seu nome" required />
+
+                    <input type="email" id="Email" name="Email" placeholder="Seu e-mail" required />
+
+                    <textarea id="Mensagem" name="Mensagem" placeholder="Mensagem" rows="5" required></textarea>
+
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+
+            <!-- ABA DE INFORMAÇÕES (mantida exatamente como pediu) -->
+            <div class="info">
+                <p><strong>Telefone</strong><br>(11) 96173-1007</p>
+
+                <p><strong>E-mail</strong><br>
+                    <a href="mailto:GOTTAadm@gmail.com">GOTTAadm@gmail.com</a><br>
+                </p>
+
+                <p>
+                    <strong>Instagram</strong><br>
+                    <a href="https://www.instagram.com/seuusuario" target="_blank">
+                        <img src="@Url.Content("~/img/iconInsta.png")" alt="Instagram" style="width: 32px; height: 32px;">
+                    </a><br><br>
+                </p>
+
+                <span>
+                    Você pode nos enviar sua dúvida, proposta, sugestão ou qualquer outro assunto.
+                    Respondemos normalmente em até 24 horas úteis.
+                </span>
+
+                <p>
+                    Nosso objetivo é facilitar a comunicação e garantir que sua experiência com o GOTTA
+                    seja sempre a melhor possível.
+                </p>
+            </div>
+
+        </div>
+    </main>
+</div>

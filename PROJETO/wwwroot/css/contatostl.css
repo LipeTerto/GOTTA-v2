@@ -1,0 +1,229 @@
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: #312a2f;
+  color: #fff;
+}
+
+/* BARRA DE NAVEGAÇÃO */
+/* BARRA DE NAVEGAÇÃO */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(87, 87, 87, 0.7);
+  padding: 10px 30px;
+  border-radius: 50px;
+  margin: 20px auto;
+  width: 90%;
+  max-width: 1600px;
+  flex-wrap: wrap; 
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.logo img {
+  height: 50px;
+}
+
+.logo span {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  flex: 1;
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 60px; 
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav a {
+  color: #e0e0e0;
+  text-decoration: none;
+  font-size: 24px; 
+  font-weight: 400;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #fff;
+}
+
+.perfil {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  overflow: hidden;
+  margin-left: 20px;
+}
+
+.perfil img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px 20px;
+  }
+
+  nav {
+    width: 100%;
+    justify-content: flex-start;
+    margin-top: 10px;
+  }
+
+  nav ul {
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+
+  nav a {
+    font-size: 20px;
+  }
+
+  .perfil {
+    align-self: flex-end;
+    margin-top: 10px;
+  }
+}
+
+
+/* FOOTER */
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.pg {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+}
+
+footer {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #ccc;
+  text-align: center;
+  padding: 8px 20px;
+  font-size: 0.9rem;
+  font-family: "Segoe UI", Arial, sans-serif;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+
+/* CONTATO */
+
+.contato {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.65)),
+              url('../img/BG1.png') center/cover fixed;
+  color: #fff;
+}
+
+.container1 {
+  background-color: rgba(0, 0, 0, 0.55);
+  padding: 50px;
+  border-radius: 25px;
+  width: 90%;
+  max-width: 900px;
+  margin: 140px auto 100px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
+
+.formulario {
+  flex: 2;
+  min-width: 280px;
+}
+
+.formulario h2 {
+  font-size: 38px;
+  font-weight: 350;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.formulario p {
+  font-size: 17px;
+  line-height: 1.7;
+  margin-bottom: 18px;
+  text-align: justify;
+}
+
+
+.info {
+  flex: 1.5;
+  min-width: 300px;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 25px;
+  border-radius: 20px;
+  backdrop-filter: blur(2px);
+}
+
+.info p {
+  margin: 25px 0;
+  font-size: 17px;
+  line-height: 1.5;
+}
+
+.info strong {
+  font-size: 18px;
+}
+
+.info a {
+  color: #fff;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.info a:hover {
+  color: rgb(255, 140, 140);
+}
+
+
+@media (max-width: 700px) {
+  .container1 {
+    padding: 35px;
+  }
+
+  .formulario h2 {
+    font-size: 32px;
+  }
+
+  .info {
+    margin-top: 10px;
+  }
+}
