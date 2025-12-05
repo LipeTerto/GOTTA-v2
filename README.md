@@ -27,7 +27,7 @@ Dessa forma, o sistema busca demonstrar como a tecnologia de drones pode auxilia
 ## Tecnologias Utilizadas
 
 * **Front-end**: HTML5, CSS3, JavaScript
-* **Back-end**: PHP
+* **Back-end**: C#
 * **Banco de Dados**: MySQL
 * **Servidor**: Apache (Linux – VirtualBox)
 
